@@ -1,0 +1,32 @@
+[project]
+name = "tokentab"
+version = "0.1.0"
+description = "Local TUI dashboard for API token usage, seat costs, and month-end spend forecasts."
+readme = "README.md"
+authors = [
+    { name = "Robert Rancz", email = "Robert_Rancz@waters.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "keyring>=25.7.0",
+    "platformdirs>=4.12.3",
+    "textual>=8.2.8",
+]
+
+[project.scripts]
+tokentab = "tokentab.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

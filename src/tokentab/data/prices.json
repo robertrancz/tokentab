@@ -1,0 +1,6 @@
+{
+  "gpt-4o": {"input": 2.5, "output": 10.0, "cache_read": 1.25},
+  "gpt-4o-mini": {"input": 0.15, "output": 0.6, "cache_read": 0.075},
+  "claude-sonnet-4-5": {"input": 3.0, "output": 15.0, "cache_read": 0.3, "cache_write": 3.75},
+  "claude-3-5-sonnet": {"input": 3.0, "output": 15.0, "cache_read": 0.3, "cache_write": 3.75}
+}
